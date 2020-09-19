@@ -32,6 +32,7 @@ function generatePassword(){
   var lowerValues = "abcdefghijklmnopqrstuvwxyz";
   var numberValues = "1234567890";
   var symbolValues = "!@#$%^&*()+=";
+  
   //new string with chosen inputs
   pwString="";
   
