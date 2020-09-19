@@ -1,15 +1,16 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var pwArray = []
+
 
 
 // Write password to the #password input
 
-function writePassword(){
+function generatePassword(){
   
   // password length 
+  
   var response = prompt("How many characters would you like your password to be?");
-  console.log(response)
+  //console.log(response)
   if(response === null){
     return;
   }
@@ -21,49 +22,57 @@ function writePassword(){
     alert("Input may only contain numbers.")
     return;
   } 
-
+  
+  response = parseInt(response)
+  console.log(response)
   // password criteria
-  var upperValues = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  var lowerValues = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var numberValues = ["1","2","3","4","5","6","7","8","9","0"];
-  var symbolValues = ["!","@","#","$","%","^","&","*","(",")","+","="];
+  // var upperValues = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  // var lowerValues = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  // var numberValues = ["1","2","3","4","5","6","7","8","9","0"];
+  // var symbolValues = ["!","@","#","$","%","^","&","*","(",")","+","="];
+
+  var upperValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerValues = "abcdefghijklmnopqrstuvwxyz";
+  var numberValues = "1234567890";
+  var symbolValues = "!@#$%^&*()+=";
+
   
   alert("Choose your password character criteria.")
-  var upperCase = confirm("Do you want your password to include capitalized letters? (Click OK for yes, and CANCEL for no)");
-  var lowerCase = confirm("Do you want your password to include lower case letters? (Click OK for yes, and CANCEL for no)");
-  var numbers = confirm("Do you want your password to include numbers? (Click OK for yes, and CANCEL for no)");
-  var symbols = confirm("Do you want your password to include symbols? (Click OK for yes, and CANCEL for no)");
+  pwString=""
 
+  var upperCase = confirm("Click OK include capitalized letters.");
   if(upperCase){
-  pwArray.push(...upperValues)
-  }
+    pwString += pwString.concat(upperValues)
+    }
+  var lowerCase = confirm("Click OK to include lower case letters.");
   if(lowerCase){
-  pwArray.push(...lowerValues)
-  }
+    pwString += pwString.concat(lowerValues)
+    }
+  var numbers = confirm("Click OK to include numbers.");
   if(numbers){
-  pwArray.push(...numberValues)
-  }
+    pwString += pwString.concat(numberValues)
+    }
+  var symbols = confirm("Click OK to include symbols.");
   if(symbols){
-  pwArray.push(...symbolValues)
-  }
-}
+    pwString += pwString.concat(symbolValues)
+    }
 
-var password = generatePassword();
-
-function generatePassword(){
-
-  var passwordText = document.querySelector("#password");
   
-
-  for(var i=0, i < pwArray.length, i++){
-
+    
+  var passwordText = document.querySelector("#password");
+  var password = "";
+   //random generation
+  for(var i = 0; i <= response; i++){
+  password = password + pwString.charAt(Math.floor(Math.random() * Math.floor(pwString.length - 1)))
+  
   }
-
-
-  passwordText.value = password;
+  //add to text
+  passwordText.value = password
+  console.log(password)
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+// // Add event listener to generate button
+generateBtn.addEventListener("click", generatePassword);
 
 
