@@ -1,13 +1,15 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", generatePassword);
 
 
 //generate password function
 
 function generatePassword(){
   
-  // password length 
+  // password length prompt 
   var response = prompt("How many characters would you like your password to be?");
   
   if(response === null){
@@ -50,10 +52,11 @@ function generatePassword(){
   if(symbols){
     pwString += pwString.concat(symbolValues)
     }
-  else{
-    alert("Please select valid criteria.")
-    return;
+  if(upperCase == false && lowerCase == false && numbers == false && symbols == false){
+    alert("Please input valid criteria.")
   }
+
+  
 
   
     
@@ -63,14 +66,13 @@ function generatePassword(){
   password = password + pwString.charAt(Math.floor(Math.random() * Math.floor(pwString.length)))
   }
 
-  //add to text
+  //add text to page and console
   var passwordText = document.querySelector("#password");
   passwordText.value = password
   console.log(password)
 }
 
 
-// // Add event listener to generate button
-generateBtn.addEventListener("click", generatePassword);
+
 
 
