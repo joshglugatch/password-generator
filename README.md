@@ -3,7 +3,7 @@ This webpage is a random password generator. It will generate a password at rand
   
 <br>
 
-![exampleGif](assets/generator.gif)
+<!-- ![exampleGif](assets/generator.gif) -->
 
 <br>
 
@@ -21,3 +21,18 @@ Here is the code that allows the user to choose which character types they would
 ![criteria](assets/criteriascreenshot.png)
 
 
+
+# Deployed Link:
+https://joshglugatch.github.io/portfolio-demo/
+
+<br>
+
+# Repository Link:
+https://github.com/joshglugatch/portfolio-demo
+
+<br>
+
+### Author:
+Josh Glugatch  
+[LinkedIn](www.linkedin.com/in/joshua-glugatch)  
+[GitHub](https://github.com/joshglugatch)
