@@ -1,4 +1,6 @@
-# Random Password Generator
+# Random Password Generator 
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.mit.edu/~amini/LICENSE.md)
+<br>
 This webpage is a random password generator. It will generate a password at random from a list of capital letters, lower case latters, numbers, and special characters. Password length and character types can be chosen by the user. Password length can be no less than 8 and no more than 128. At least one character type must be chosen. Users will be prompted for password length after clicking the "Generate Password" button along with confirm boxes to choose criteria.
   
 <br>
@@ -17,7 +19,9 @@ Generates a random password based on what the user wants. It can be any length b
 
 ## Code Example
 Here is the code that allows the user to choose which character types they would like in their generated password. If they choose a type of character, it adds those values to a new string to be randomly chosen from.
-<br>
+
+<br>  
+
 ![criteria](https://github.com/joshglugatch/password-generator/blob/master/Assets/criteriascreenshot.png?raw=true)
 
 
@@ -34,5 +38,8 @@ https://github.com/joshglugatch/password-generator
 
 ### Author:
 Josh Glugatch  
-[LinkedIn](www.linkedin.com/in/joshua-glugatch)  
-[GitHub](https://github.com/joshglugatch)
+
+[![GitHub](https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/joshglugatch)
+<br>
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/joshua-glugatch)
+
