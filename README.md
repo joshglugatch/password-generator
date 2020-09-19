@@ -3,7 +3,7 @@ This webpage is a random password generator. It will generate a password at rand
   
 <br>
 
-![exampleGif](/assets/generator.gif)
+![exampleGif](https://github.com/joshglugatch/password-generator/blob/master/Assets/generator.gif?raw=true)
 
 <br>
 
@@ -18,7 +18,7 @@ Generates a random password based on what the user wants. It can be any length b
 ## Code Example
 Here is the code that allows the user to choose which character types they would like in their generated password. If they choose a type of character, it adds those values to a new string to be randomly chosen from.
 <br>
-![criteria](/assets/criteriascreenshot.png)
+![criteria](https://github.com/joshglugatch/password-generator/blob/master/Assets/criteriascreenshot.png?raw=true)
 
 
 
