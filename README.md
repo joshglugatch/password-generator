@@ -22,7 +22,7 @@ Here is the code that allows the user to choose which character types they would
 
 <br>  
 
-![criteria](https://github.com/joshglugatch/password-generator/blob/master/Assets/criteriascreenshot.png?raw=true)
+![criteria](https://github.com/joshglugatch/password-generator/blob/master/Assets/criteriascreenshotNEW.png?raw=true)
 
 
 
