@@ -18,13 +18,19 @@ This webpage is a random password generator. It will generate a password at rand
 Generates a random password based on what the user wants. It can be any length between 8 and 128 characters. Users can choose if they want certain character types in their password. 
 
 ## Code Example
-Here is the code that allows the user to choose which character types they would like in their generated password. If they choose a type of character, it adds those values to a new string to be randomly chosen from.
+Here is the code that allows the user to choose which character types they would like in their generated password. If they choose a type of character, it adds those values to a new string to be randomly chosen from. The critChoice variable ensures that one of each character type chosen by the user is added to the final password by placing a character type in the beginning of the string.
 
 <br>  
 
 ![criteria](https://github.com/joshglugatch/password-generator/blob/master/Assets/criteriascreenshotNEW.png?raw=true)
 
+<br>
+Added a string shuffler to my final password to prevent the user criteria choices from being the first four characters of the password string.
+<br>
 
+![shuffler](https://github.com/joshglugatch/password-generator/blob/master/Assets/shuffle.png?raw=true)
+
+<br>
 
 # Deployed Link:
 https://joshglugatch.github.io/password-generator/
