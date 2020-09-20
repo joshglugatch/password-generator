@@ -53,4 +53,4 @@ Josh Glugatch
 
 ### Credits:
 Thanks to Joel Mellon on StackOverflow for the string shuffle code. 
-Link to shuffle code: [![StackOverflow](https://github.com/joshglugatch/password-generator/blob/master/Assets/so-icon.png?raw=true)](https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript)
+Check out the [link to shuffle code.](https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript)
