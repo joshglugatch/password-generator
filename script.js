@@ -23,8 +23,8 @@ function generatePassword(){
     return;
   } 
   
-  response = parseInt(response)
-  console.log(response)
+  response = parseInt(response);
+  console.log(response);
   
  // Criteria values
   var upperValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -65,7 +65,7 @@ function generatePassword(){
     alert("Please input valid criteria.")
   }
 
-  console.log(critChoice)
+  console.log(critChoice);
 
   
 
@@ -73,7 +73,7 @@ function generatePassword(){
     
   // Random generation
   var password = "";
-  password = password.concat(critChoice)
+  password = password.concat(critChoice);
 
   for(var i = 0; i < response - critChoice.length; i++){
   password = password + pwString.charAt(Math.floor(Math.random() * Math.floor(pwString.length)))
