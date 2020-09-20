@@ -65,6 +65,8 @@ function generatePassword(){
     alert("Please input valid criteria.")
   }
 
+  console.log(critChoice)
+
   
 
   
@@ -76,11 +78,14 @@ function generatePassword(){
   for(var i = 0; i < response - critChoice.length; i++){
   password = password + pwString.charAt(Math.floor(Math.random() * Math.floor(pwString.length)))
   }
+  
+  // Shuffles generated password so critChoice is not always at the beginning
+  var password = password.split("").sort(function(){return 0.5-Math.random()}).join("");
 
   // Add text to page and console
   var passwordText = document.querySelector("#password");
-  passwordText.value = password
-  console.log(password)
+  passwordText.value = password;
+  console.log(password);
 }
 
 
