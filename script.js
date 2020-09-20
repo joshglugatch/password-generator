@@ -5,11 +5,10 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", generatePassword);
 
 
-//generate password function
-
+// Generate password function
 function generatePassword(){
   
-  // password length prompt 
+  // Password length prompt 
   var response = prompt("How many characters would you like your password to be?");
   
   if(response === null){
@@ -27,31 +26,40 @@ function generatePassword(){
   response = parseInt(response)
   console.log(response)
   
- //criteria values
+ // Criteria values
   var upperValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowerValues = "abcdefghijklmnopqrstuvwxyz";
   var numberValues = "1234567890";
   var symbolValues = "!@#$%^&*()+=";
   
-  //new string with chosen inputs
-  pwString="";
+  // New string with chosen inputs
+  var pwString="";
+  var critChoice="";
   
-  // password criteria 
+  // Password criteria 
   var upperCase = confirm("Click OK include capitalized letters.");
   if(upperCase){
-    pwString += pwString.concat(upperValues)
+    pwString += pwString.concat(upperValues);
+    var randUp = Math.floor(Math.random() * upperValues.length);
+    critChoice += upperValues.charAt(randUp);
     }
   var lowerCase = confirm("Click OK to include lower case letters.");
   if(lowerCase){
-    pwString += pwString.concat(lowerValues)
+    pwString += pwString.concat(lowerValues);
+    var randLow = Math.floor(Math.random() * lowerValues.length);
+    critChoice += lowerValues.charAt(randLow);
     }
   var numbers = confirm("Click OK to include numbers.");
   if(numbers){
-    pwString += pwString.concat(numberValues)
+    pwString += pwString.concat(numberValues);
+    var randNum = Math.floor(Math.random() * numberValues.length);
+    critChoice += numberValues.charAt(randNum);
     }
   var symbols = confirm("Click OK to include symbols.");
   if(symbols){
-    pwString += pwString.concat(symbolValues)
+    pwString += pwString.concat(symbolValues);
+    var randSym = Math.floor(Math.random() * symbolValues.length);
+    critChoice += symbolValues.charAt(randSym);
     }
   if(upperCase == false && lowerCase == false && numbers == false && symbols == false){
     alert("Please input valid criteria.")
@@ -61,13 +69,15 @@ function generatePassword(){
 
   
     
-  //random generation
+  // Random generation
   var password = "";
-  for(var i = 1; i <= response; i++){
+  password = password.concat(critChoice)
+
+  for(var i = 0; i < response - critChoice.length; i++){
   password = password + pwString.charAt(Math.floor(Math.random() * Math.floor(pwString.length)))
   }
 
-  //add text to page and console
+  // Add text to page and console
   var passwordText = document.querySelector("#password");
   passwordText.value = password
   console.log(password)
