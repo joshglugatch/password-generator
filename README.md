@@ -30,6 +30,8 @@ Added a string shuffler to my final password to prevent the user criteria choice
 
 ![shuffler](https://github.com/joshglugatch/password-generator/blob/master/Assets/shuffle.png?raw=true)
 
+This line of code was found on Stack Overflow.
+
 <br>
 
 # Deployed Link:
@@ -49,3 +51,6 @@ Josh Glugatch
 <br>
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/joshua-glugatch)
 
+### Credits:
+Thanks to Joel Mellon on StackOverflow for the string shuffle code. 
+Link to shuffle code: [![StackOverflow](https://github.com/joshglugatch/password-generator/blob/master/Assets/so-icon.png?raw=true)](https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript)
